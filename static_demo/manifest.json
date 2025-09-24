@@ -1,0 +1,18 @@
+{
+  "name": "CodePath CSS Changer",
+  "description": "Save your eyes from the default #fff background!",
+  "version": "1",
+  "manifest_version": 3,
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "action": {
+    "default_popup": "/popup.html",
+    "default_icon": "/icon.png"
+  },
+  "icons": {
+    "16": "/icon.png",
+    "32": "/icon.png",
+    "48": "/icon.png",
+    "128": "/icon.png"
+  },
+  "permissions": ["fontSettings", "activeTab", "scripting", "tabs"]
+}
