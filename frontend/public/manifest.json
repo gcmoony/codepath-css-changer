@@ -1,0 +1,26 @@
+{
+  "name": "CodePath CSS Changer",
+  "description": "Save your eyes from the default #fff background!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "/index.html",
+    "default_icon": "/icon.png"
+  },
+  "icons": {
+    "16": "/icon.png",
+    "32": "/icon.png",
+    "48": "/icon.png",
+    "128": "/icon.png"
+  },
+  "permissions": ["storage", "activeTab", "cookies"],
+  "host_permissions": ["https://courses.codepath.org/courses/*"],
+  "author": "GCMunoz",
+  "content_scripts": [
+    {
+      "js": ["/assets/main.js"],
+      "matches": ["https://courses.codepath.org/courses/*"],
+      "type": "module"
+    }
+  ]
+}
